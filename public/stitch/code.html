@@ -1,0 +1,491 @@
+<!DOCTYPE html><html class="light" dir="rtl" lang="ar"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=block" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">try{
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-container": "#0a192f",
+                        "secondary-container": "#d29100",
+                        "outline": "#8f9097",
+                        "surface-dim": "#141311",
+                        "surface-bright": "#f8fafc",
+                        "secondary": "#E3A019",
+                        "surface": "#ffffff",
+                        "primary-container": "#0a192f",
+                        "background": "#0a192f",
+                        "surface-tint": "#b9c7e4",
+                        "primary": "#0a192f",
+                        "surface-variant": "#f1f5f9",
+                        "surface-container-low": "#f8fafc",
+                        "surface-container": "#f1f5f9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "16px",
+                        "grid-line-weight": "1px",
+                        "margin-desktop": "64px",
+                        "base": "8px",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["IBM Plex Sans Arabic"],
+                        "headline-lg": ["IBM Plex Sans Arabic"],
+                        "body-lg": ["IBM Plex Sans Arabic"],
+                        "headline-xl": ["IBM Plex Sans Arabic"],
+                        "body-md": ["IBM Plex Sans Arabic"],
+                        "label-technical": ["IBM Plex Sans Arabic"],
+                        "headline-lg-mobile": ["IBM Plex Sans Arabic"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["28px", { "lineHeight": "1.4", "fontWeight": "600" }],
+                        "headline-lg": ["36px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "body-lg": ["20px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "headline-xl": ["56px", { "lineHeight": "1.2", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-md": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-technical": ["14px", { "lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg-mobile": ["32px", { "lineHeight": "1.3", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    }catch(_e){}</script></head><body class="bg-background text-white font-body-md antialiased selection:bg-secondary selection:text-white selection:bg-opacity-80">
+<!-- Header -->
+<header class="bg-background/95 docked full-width top-0 sticky z-50 border-b border-white/10 backdrop-blur-md">
+<div class="flex flex-row-reverse justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-6 max-w-full mx-auto">
+<!-- Logo -->
+<div class="flex items-center gap-4">
+<img alt="Deepintaj Logo" class="h-16 object-contain w-auto" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYqEUUrpQWzA7kEI_-_k1iSNCovyOxcUcYk43Z-hG4CA0aL-0zDk99XKFZB_DEmg6IEp7ibHDdv1GNP72xUTVBeAS-zWmL1bTt8kpw1KmcXnQEegHmyr_wc3F1UvaLzsYF6-F8KjoPwg4Z_WPHS0WIONtgv0kPvWtPqu5s23oQV_JtKlimPECkqMWlB5AnQVdoLyvRVZ7c5N7bIPHcC-27c8CHDp7Pi-LrSUu6gZpRN6wyiFAkHAeLpYfIJKJCa-AfVA">
+</div>
+<!-- Navigation Links (Desktop) -->
+<nav class="hidden md:flex items-center gap-12">
+<a class="text-secondary border-b-2 border-secondary pb-1 font-bold transition-all duration-300 text-lg" href="#">الرئيسية</a>
+<a class="text-white/80 hover:text-secondary transition-all duration-300 text-lg" href="#services">الخدمات</a>
+<a class="text-white/80 hover:text-secondary transition-all duration-300 text-lg" href="#methodology">منهجيتنا</a>
+<a class="text-white/80 hover:text-secondary transition-all duration-300 text-lg" href="#why">لماذا ديبنتاج</a>
+<a class="text-white/80 hover:text-secondary transition-all duration-300 text-lg" href="#contact">تواصل معنا</a>
+</nav>
+<!-- Actions -->
+<div class="flex items-center gap-6">
+<button class="hidden md:flex items-center gap-2 text-white/80 hover:text-secondary transition-colors font-label-technical text-base">
+<span class="material-symbols-outlined text-sm">language</span>
+                    English
+                </button>
+<a class="bg-secondary text-[#0A192F] px-8 py-3 rounded-none font-label-technical font-bold scale-95 active:scale-90 transition-transform flex items-center gap-2 hover:bg-white hover:text-[#0A192F]" href="#contact">
+                    اطلب استشارة
+                </a>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative min-h-[90vh] flex items-center pt-24 pb-16 overflow-hidden bg-background">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-cover bg-left md:bg-center w-full h-full mix-blend-luminosity opacity-60" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAaLAZ_OWJvmyjSj-u87JfsRJI9UxpynFEWOXwHVLVUpIebL9lCG-cXKV5wE5T1-1rn4-eHuB7vJIorY04mFKcND7tAZmdHMXukw5A2pA47LeKLAmHXHU6iYBdRb6OZc0nxXWjhWLcPK-Zws9rB4iPtTgIQwYuNW7jiEhaowXkwqTo4rYyI5SUjrA_b0pMQ6vyERvn-3J-y42DJ4hfCQ7QHIaNotzmhTpTZt3IhuhCWs1qizON-RKOwSee29dkXXYVJXQ&quot;);"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent"></div>
+</div>
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop relative z-10 flex flex-col justify-center">
+<div class="max-w-3xl">
+<!-- Top-left style ID tag -->
+<div class="inline-flex items-center gap-2 mb-8 border border-white/30 px-4 py-2 bg-background/50 backdrop-blur self-start">
+<span class="w-2.5 h-2.5 bg-secondary rounded-full animate-pulse"></span>
+<span class="font-label-technical text-white/90 tracking-wider uppercase text-sm">استشارات هندسية وتشغيلية مرخّصة</span>
+</div>
+<h1 class="font-headline-xl text-white mb-8 leading-tight">
+                    نحو عمليات أوضح،<br>
+                    وتنفيذ أدق، ونتائج<br>
+<span class="text-secondary">قابلة للقياس</span>
+</h1>
+<p class="font-body-lg text-white/90 max-w-2xl mb-12 border-r-4 border-secondary/80 pr-6 text-xl">
+                    نساعد المنشآت وأصحاب المشاريع على تشخيص التحديات التشغيلية والهندسية، وتحويلها إلى خطوات عملية واضحة وقابلة للتنفيذ.
+                </p>
+<div class="flex flex-wrap gap-6">
+<a class="bg-secondary text-[#0A192F] px-8 py-4 rounded-none font-label-technical text-lg font-bold hover:bg-white hover:text-[#0A192F] transition-all flex items-center gap-3 shadow-lg" href="#assessment">
+                        ابدأ بالتقييم التشغيلي
+                        <span class="material-symbols-outlined text-xl">arrow_left_alt</span>
+</a>
+<a class="border border-white/30 bg-background/40 backdrop-blur text-white px-8 py-4 rounded-none font-label-technical text-lg font-bold hover:border-secondary hover:text-secondary transition-all" href="#services">
+                        استعرض خدماتنا
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Credentials Ribbon -->
+<div class="w-full border-y border-white/10 bg-background/90 backdrop-blur-sm py-6 relative z-20">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="flex flex-wrap justify-between items-center gap-8 font-label-technical text-base text-white/90">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">verified</span>
+                    خبرة أكثر من 15 عامًا
+                </div>
+<div class="w-1.5 h-1.5 bg-white/20 rounded-full hidden md:block"></div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">engineering</span>
+                    خبير هندسي معتمد
+                </div>
+<div class="w-1.5 h-1.5 bg-white/20 rounded-full hidden md:block"></div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">factory</span>
+                    استشاري صناعي مرخّص
+                </div>
+<div class="w-1.5 h-1.5 bg-white/20 rounded-full hidden md:block"></div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[24px]">domain_verification</span>
+                    فاحص بناء معتمد
+                </div>
+</div>
+</div>
+</div>
+<!-- Who We Serve Section -->
+<section class="py-20 bg-surface-bright border-b border-gray-200">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="text-center max-w-4xl mx-auto">
+<span class="font-label-technical text-secondary mb-4 block text-lg font-bold">// من نخدم</span>
+<h2 class="font-headline-lg text-slate-900 mb-12">نقدم حلولنا لقطاعات متنوعة</h2>
+<div class="flex flex-wrap justify-center gap-4">
+<span class="px-6 py-3 bg-white border border-gray-200 shadow-sm text-slate-800 text-lg rounded-full font-medium">المصانع والمنشآت الصناعية</span>
+<span class="px-6 py-3 bg-white border border-gray-200 shadow-sm text-slate-800 text-lg rounded-full font-medium">الورش ومراكز الصيانة</span>
+<span class="px-6 py-3 bg-white border border-gray-200 shadow-sm text-slate-800 text-lg rounded-full font-medium">سلاسل التوريد والخدمات التشغيلية</span>
+<span class="px-6 py-3 bg-white border border-gray-200 shadow-sm text-slate-800 text-lg rounded-full font-medium">أصحاب المشاريع والمقاولون</span>
+<span class="px-6 py-3 bg-white border border-gray-200 shadow-sm text-slate-800 text-lg rounded-full font-medium">أصحاب المباني والمشترون</span>
+<span class="px-6 py-3 bg-white border border-gray-200 shadow-sm text-slate-800 text-lg rounded-full font-medium border-secondary/30 bg-secondary/5">المنشآت التي تعاني من بطء الإجراءات</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Intro -->
+<section class="pt-24 pb-12 relative overflow-hidden bg-white text-slate-900" id="services">
+<div class="absolute inset-0 technical-grid opacity-50"></div>
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="text-center max-w-3xl mx-auto mb-8">
+<span class="font-label-technical text-secondary mb-4 block font-bold text-lg">// القدرات الأساسية</span>
+<h2 class="font-headline-lg text-slate-900">خدمات عملية تبدأ من الواقع</h2>
+<div class="w-24 h-1.5 bg-secondary mx-auto mt-8"></div>
+</div>
+</div>
+</section>
+<!-- BPR Section -->
+<section class="py-20 bg-surface-container-low text-slate-900 relative border-t border-gray-200">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+<!-- Content -->
+<div class="order-2 lg:order-1">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-14 h-14 bg-primary-container text-secondary flex items-center justify-center rounded-lg shadow-md">
+<span class="material-symbols-outlined text-3xl">account_tree</span>
+</div>
+<h3 class="font-headline-lg text-slate-900">إعادة هندسة وتصميم العمليات</h3>
+</div>
+<p class="font-body-lg text-slate-600 mb-12 max-w-lg leading-relaxed">
+                        نحلل تدفق العمل الحالي، ونحدد نقاط الهدر والاختناق، لنعيد تصميم عملياتك بشكل يرفع الكفاءة ويخفض التكاليف التشغيلية.
+                    </p>
+<div class="space-y-6 font-label-technical">
+<!-- Item -->
+<div class="p-6 border border-gray-200 bg-white hover:border-secondary/50 hover:shadow-md transition-all rounded-lg group">
+<div class="flex justify-between items-start mb-2">
+<div class="flex items-center gap-4">
+<span class="text-gray-400 group-hover:text-secondary transition-colors font-bold text-xl">01</span>
+<span class="text-slate-900 font-bold text-lg">تحليل وتقييم العمليات الحالية</span>
+</div>
+<span class="text-primary-container font-bold bg-gray-100 px-3 py-1 rounded">500 SAR</span>
+</div>
+<p class="text-slate-500 text-sm mt-3 pr-10">تشخيص واقع العمليات وتحديد الفجوات.</p>
+</div>
+<!-- Item -->
+<div class="p-6 border border-gray-200 bg-white hover:border-secondary/50 hover:shadow-md transition-all rounded-lg group">
+<div class="flex justify-between items-start mb-2">
+<div class="flex items-center gap-4">
+<span class="text-gray-400 group-hover:text-secondary transition-colors font-bold text-xl">02</span>
+<span class="text-slate-900 font-bold text-lg">تصميم الهيكل التنظيمي للعمليات</span>
+</div>
+<span class="text-primary-container font-bold bg-gray-100 px-3 py-1 rounded">1500 SAR</span>
+</div>
+<p class="text-slate-500 text-sm mt-3 pr-10">مواءمة الهيكل مع تدفق العمل الأمثل.</p>
+</div>
+<!-- Item -->
+<div class="p-6 border border-gray-200 bg-white hover:border-secondary/50 hover:shadow-md transition-all rounded-lg group">
+<div class="flex justify-between items-start mb-2">
+<div class="flex items-center gap-4">
+<span class="text-gray-400 group-hover:text-secondary transition-colors font-bold text-xl">03</span>
+<span class="text-slate-900 font-bold text-lg">إعادة هندسة العمليات الشاملة (BPR)</span>
+</div>
+<span class="text-primary-container font-bold bg-gray-100 px-3 py-1 rounded">3000 SAR</span>
+</div>
+<p class="text-slate-500 text-sm mt-3 pr-10">تصميم جذري للعمليات لتحقيق قفزات في الأداء.</p>
+</div>
+</div>
+</div>
+<!-- Image -->
+<div class="order-1 lg:order-2 relative group mt-8 lg:mt-0">
+<div class="absolute -inset-4 border-2 border-secondary/20 bg-secondary/5 transform translate-x-4 translate-y-4 rounded-xl"></div>
+<div class="relative h-[600px] border border-gray-200 overflow-hidden rounded-xl shadow-lg">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuD7ETjwSI9F9_4jJ2erIEwR-xc6MQiva9PQQe6MPgTlemJ0ZU7JyHYdohORvrMEBrLvhQx4dL3S66-VGiyLubmtJt2Q3NTB29nJ7xlPrBoiHFbCLXFMFx72U_ASJYYIwvHZ0oZsZN1i9sf4AdqzJmvU6i4pa0Aijqy4mhwxCNp1-TglolOlvT1Z5_zNykDYr8R_Cz8q5MK7RgCgec7I0Dio5MO62dOghGFebmsgX-k6md1c2MN7B99Nx9B_jJgJWmGTbw&quot;);"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Engineering Services Section -->
+<section class="py-20 bg-white text-slate-900 relative">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+<!-- Image -->
+<div class="relative group mt-8 lg:mt-0">
+<div class="absolute -inset-4 border-2 border-primary-container/10 bg-primary-container/5 transform -translate-x-4 translate-y-4 rounded-xl"></div>
+<div class="relative h-[600px] border border-gray-200 overflow-hidden rounded-xl shadow-lg">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAind-ky_J7DMwYCRtqbnIuPWaoWBOcmZwLOO6GcR9zOZcQ5fIQAghjjWSRMXjSEwDGuA85JsuCe7o_rv_j3L3dE-QYtz3fDivYOdyRePIr597nktruhaAxh250cUJuzXD8rsZNyHXop9VW5IXAyTJUIT61qhLkufBqDyNQEUKENAdG9AFCMbg-xaTv9SXPz_bLz-X_Tp1pSXv0JaROra02h-rv7BqGlTd3U0pT2l9BZ12i38IUEa82NIyQuJ0nsIXkUQ&quot;);"></div>
+</div>
+</div>
+<!-- Content -->
+<div class="pl-0 lg:pl-12">
+<div class="flex items-center gap-4 mb-8">
+<div class="w-14 h-14 bg-primary-container text-secondary flex items-center justify-center rounded-lg shadow-md">
+<span class="material-symbols-outlined text-3xl">architecture</span>
+</div>
+<h3 class="font-headline-lg text-slate-900">الاستشارات الهندسية المتخصصة</h3>
+</div>
+<p class="font-body-lg text-slate-600 mb-12 max-w-lg leading-relaxed">
+                        خبرة هندسية تراكمية نضعها بين يديك لضمان جودة التنفيذ، مطابقة المعايير، وسلامة المنشآت الصناعية والتجارية.
+                    </p>
+<div class="space-y-4 font-label-technical">
+<!-- Item -->
+<div class="p-6 border border-gray-200 bg-surface-container-low hover:border-secondary/50 hover:shadow-md transition-all rounded-lg group">
+<div class="flex justify-between items-start mb-2">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-gray-400 group-hover:text-secondary text-2xl">plumbing</span>
+<span class="text-slate-900 font-bold text-lg">مراجعة وتدقيق المخططات الهندسية</span>
+</div>
+<span class="text-primary-container font-bold bg-white px-3 py-1 rounded border border-gray-200">500 SAR</span>
+</div>
+<p class="text-slate-500 text-sm mt-3 pr-10">ضمان خلو المخططات من الأخطاء قبل بدء التنفيذ.</p>
+</div>
+<!-- Item -->
+<div class="p-6 border border-gray-200 bg-surface-container-low hover:border-secondary/50 hover:shadow-md transition-all rounded-lg group">
+<div class="flex justify-between items-start mb-2">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-gray-400 group-hover:text-secondary text-2xl">home_repair_service</span>
+<span class="text-slate-900 font-bold text-lg">فحص المباني والمنشآت</span>
+</div>
+<span class="text-primary-container font-bold bg-white px-3 py-1 rounded border border-gray-200">800 SAR</span>
+</div>
+<p class="text-slate-500 text-sm mt-3 pr-10">تقارير فنية دقيقة لسلامة وجودة البناء.</p>
+</div>
+<!-- Item -->
+<div class="p-6 border border-gray-200 bg-surface-container-low hover:border-secondary/50 hover:shadow-md transition-all rounded-lg group">
+<div class="flex justify-between items-start mb-2">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-gray-400 group-hover:text-secondary text-2xl">visibility</span>
+<span class="text-slate-900 font-bold text-lg">الإشراف الهندسي على التنفيذ</span>
+</div>
+<span class="text-primary-container font-bold bg-white px-3 py-1 rounded border border-gray-200">1500 SAR</span>
+</div>
+<p class="text-slate-500 text-sm mt-3 pr-10">إشراف ميداني لضمان التطابق مع المواصفات.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Methodology / Process -->
+<section class="py-24 bg-primary-container text-white relative border-y border-white/10" id="methodology">
+<div class="absolute inset-0 blueprint-underlay opacity-20"></div>
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="text-center max-w-3xl mx-auto mb-20">
+<span class="font-label-technical text-secondary mb-4 block font-bold text-lg">// منهجية العمل</span>
+<h2 class="font-headline-lg text-white">منهجية ديبنتاج: من التشخيص إلى الأثر</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+<!-- Step 1 -->
+<div class="relative z-10 bg-white/5 border border-white/10 p-8 pt-12 hover:border-secondary transition-colors backdrop-blur-sm rounded-xl">
+<div class="absolute top-0 right-8 transform -translate-y-1/2 w-12 h-12 bg-secondary text-primary-container font-bold text-xl flex items-center justify-center rounded-lg shadow-lg">
+                        01
+                    </div>
+<h4 class="font-headline-md text-white mb-4">نفهم الواقع</h4>
+<p class="font-body-md text-white/80 leading-relaxed">
+                        تحليل دقيق للبيانات، المخططات، وبيئة العمل الفعلية لتكوين صورة شاملة عن الوضع الراهن.
+                    </p>
+</div>
+<!-- Step 2 -->
+<div class="relative z-10 bg-white/5 border border-white/10 p-8 pt-12 hover:border-secondary transition-colors backdrop-blur-sm rounded-xl md:mt-12">
+<div class="absolute top-0 right-8 transform -translate-y-1/2 w-12 h-12 bg-white text-primary-container font-bold text-xl flex items-center justify-center rounded-lg shadow-lg">
+                        02
+                    </div>
+<h4 class="font-headline-md text-white mb-4">نكشف الفجوات</h4>
+<p class="font-body-md text-white/80 leading-relaxed">
+                        تحديد نقاط الهدر، التحديات الهندسية، واختناقات العمليات باستخدام أدوات تحليل منهجية.
+                    </p>
+</div>
+<!-- Step 3 -->
+<div class="relative z-10 bg-white/5 border border-white/10 p-8 pt-12 hover:border-secondary transition-colors backdrop-blur-sm rounded-xl">
+<div class="absolute top-0 right-8 transform -translate-y-1/2 w-12 h-12 bg-white text-primary-container font-bold text-xl flex items-center justify-center rounded-lg shadow-lg">
+                        03
+                    </div>
+<h4 class="font-headline-md text-white mb-4">نصمم الحل</h4>
+<p class="font-body-md text-white/80 leading-relaxed">
+                        بناء نماذج هندسية وتشغيلية مخصصة وقابلة للتنفيذ المباشر وتتوافق مع الميزانية.
+                    </p>
+</div>
+<!-- Step 4 -->
+<div class="relative z-10 bg-white/5 border border-white/10 p-8 pt-12 hover:border-secondary transition-colors backdrop-blur-sm rounded-xl md:mt-12">
+<div class="absolute top-0 right-8 transform -translate-y-1/2 w-12 h-12 bg-white text-primary-container font-bold text-xl flex items-center justify-center rounded-lg shadow-lg">
+                        04
+                    </div>
+<h4 class="font-headline-md text-white mb-4">نتابع الأثر</h4>
+<p class="font-body-md text-white/80 leading-relaxed">
+                        مؤشرات أداء واضحة، وإشراف دقيق لضمان تحقيق النتائج المرجوة واستدامتها.
+                    </p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Deepintaj Section -->
+<section class="py-24 bg-surface-container-low text-slate-900 relative overflow-hidden border-b border-gray-200" id="why">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<!-- Content -->
+<div>
+<span class="font-label-technical text-secondary mb-4 block font-bold text-lg">// لماذا نحن</span>
+<h2 class="font-headline-lg text-slate-900 mb-10">لماذا ديبنتاج شريكك الموثوق؟</h2>
+<div class="space-y-10 border-r-4 border-gray-200 pr-8">
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-3xl">workspace_premium</span>
+</div>
+<div>
+<h4 class="font-headline-md text-slate-900 mb-2">خبرة تتجاوز 15 عاماً</h4>
+<p class="font-body-lg text-slate-600">تراكم معرفي عميق في القطاع الصناعي والهندسي السعودي.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-3xl">shield_person</span>
+</div>
+<div>
+<h4 class="font-headline-md text-slate-900 mb-2">اعتمادات رسمية قوية</h4>
+<p class="font-body-lg text-slate-600">
+                                    خبير هندسي معتمد من (SCE)، مستشار مرخص من وزارة الصناعة، وفاحص معتمد لدى (وافي).
+                                </p>
+</div>
+</div>
+<div class="flex gap-6">
+<div class="w-12 h-12 rounded-full bg-secondary/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-3xl">analytics</span>
+</div>
+<div>
+<h4 class="font-headline-md text-slate-900 mb-2">نظرة هندسية-تشغيلية متكاملة</h4>
+<p class="font-body-lg text-slate-600">لا نفصل المخطط الهندسي عن واقع التشغيل؛ نصمم لنبني بكفاءة، ونبني لنشغل بفعالية.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Image -->
+<div class="h-[600px] relative rounded-2xl overflow-hidden shadow-xl">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 hover:scale-105" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuAXBy4egs1ug1GKZIG-wVYDyM7t46dW2_tyneFbrOKYGWjh81ohxU-lMcg_riTTC8qya4oi0l7Vds5l7vm-9q2Dbgmsppm8f1tTn1VWyyG2XXbPJmpnx184ZPrgNJEFdHGHJPrX_NHh6fQmVj1MQFmpQDFQ6LEekqxE0V9-4hZkL5nJlDSJuys6jshPgT47OgTLG1oXWZCtJO3S5B9NvRbQf2na5Uaf3ZJ9wiUGSkW_avAo7DoXU3iBPxj_P1ddTV-u5A&quot;);"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Entry Service CTA -->
+<section class="py-24 relative bg-primary-container text-white border-y border-white/10 overflow-hidden" id="assessment">
+<div class="absolute inset-0" style="background-image: url(&quot;https://lh3.googleusercontent.com/aida-public/AB6AXuDb7WusDDGbwEVJfOZ7UV7KBgY4G9AMexBhEhtuMB5luv3L-Jvl8wgUKOS--WD_zmrC6HS3fXSq7cuGi3kXvcqjZOTuxuJInIb5kvHbUvBrSRH8AYsrs12jcXM28Dj-GiDCi1DxCV01Mm7v4JiXl1aDmBEjoKIdCxuGESjO-n4odFyKzSsJ3luafD1NQTRNsrjbYx-1Ju6UVaARL3jEIE5jQRzDWBI7d3evLJLviJtBPM-y4LYr6nkpmRhfGPu3f_QKnQ&quot;); background-size: cover; background-position: center center; opacity: 0.2;"></div>
+<div class="absolute inset-0 bg-gradient-to-l from-primary-container/80 to-transparent"></div>
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="bg-white/5 backdrop-blur-xl border border-white/20 p-10 md:p-14 rounded-2xl max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12 shadow-2xl">
+<div class="flex-1">
+<div class="inline-block bg-secondary text-primary-container px-4 py-2 text-sm font-bold font-label-technical mb-6 rounded">
+                        خدمة البداية الموصى بها
+                    </div>
+<h3 class="font-headline-xl text-white mb-6">التقييم التشغيلي الأولي</h3>
+<p class="font-body-lg text-white/90 max-w-2xl mb-8 leading-relaxed">
+                        جلسة استشارية مكثفة مع خبرائنا لتشخيص التحديات السريعة، تقديم توصيات فورية، وتحديد مسار العمل المستقبلي.
+                    </p>
+<ul class="space-y-4 font-label-technical text-lg text-white/90">
+<li class="flex items-center gap-3"><span class="text-secondary text-2xl">✓</span> مراجعة سريعة للمخططات</li>
+<li class="flex items-center gap-3"><span class="text-secondary text-2xl">✓</span> تحليل كفاءة خط الإنتاج الأولي</li>
+</ul>
+</div>
+<div class="shrink-0 text-center flex flex-col items-center bg-background/50 p-8 rounded-xl border border-white/10">
+<div class="font-headline-xl text-secondary mb-2">500 <span class="text-2xl">SAR</span></div>
+<div class="font-label-technical text-white/60 text-sm mb-8">للاستشارة الواحدة</div>
+<a class="bg-secondary text-[#0A192F] px-10 py-4 rounded font-label-technical text-lg font-bold hover:bg-white hover:text-[#0A192F] transition-all w-full text-center shadow-lg" href="#contact">
+                        اطلب التقييم الأولي
+                    </a>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-24 relative overflow-hidden bg-background text-white border-t border-white/10" id="contact">
+<div class="container mx-auto px-margin-mobile md:px-margin-desktop relative z-10">
+<div class="max-w-3xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline-lg text-white mb-4">تواصل مع خبرائنا</h2>
+<p class="font-body-lg text-white/70">حدد تحدياتك لنبدأ في رسم الحل الهندسي والتشغيلي المناسب لمنشأتك.</p>
+</div>
+<form class="bg-white/5 p-10 border border-white/10 shadow-2xl rounded-2xl backdrop-blur-sm">
+<div class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div>
+<label class="block font-label-technical text-sm text-white/80 mb-3">الاسم <span class="text-secondary">*</span></label>
+<input class="w-full bg-background border border-white/20 px-5 py-4 text-base focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors rounded text-white" placeholder="الاسم الكريم" type="text">
+</div>
+<div>
+<label class="block font-label-technical text-sm text-white/80 mb-3">رقم الجوال <span class="text-secondary">*</span></label>
+<input class="w-full bg-background border border-white/20 px-5 py-4 text-base focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors rounded text-white text-right" dir="ltr" placeholder="05x xxx xxxx" type="tel">
+</div>
+</div>
+<div>
+<label class="block font-label-technical text-sm text-white/80 mb-3">البريد الإلكتروني</label>
+<input class="w-full bg-background border border-white/20 px-5 py-4 text-base focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors rounded text-white text-right" dir="ltr" placeholder="email@company.com" type="email">
+</div>
+<div>
+<label class="block font-label-technical text-sm text-white/80 mb-3">نوع الخدمة المطلوبة</label>
+<select class="w-full bg-background border border-white/20 px-5 py-4 text-base focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors rounded text-white appearance-none">
+<option>التقييم التشغيلي الأولي</option>
+<option>إعادة هندسة العمليات (BPR)</option>
+<option>استشارات هندسية متخصصة</option>
+<option>أخرى</option>
+</select>
+</div>
+<div>
+<label class="block font-label-technical text-sm text-white/80 mb-3">نبذة عن التحدي أو المشروع</label>
+<textarea class="w-full bg-background border border-white/20 px-5 py-4 text-base focus:border-secondary focus:ring-1 focus:ring-secondary outline-none transition-colors rounded text-white resize-none" placeholder="وصف موجز..." rows="4"></textarea>
+</div>
+<button class="w-full bg-secondary text-primary-container py-5 font-headline-md text-lg font-bold hover:bg-white transition-colors rounded mt-4" type="button">
+                            إرسال الطلب
+                        </button>
+<div class="text-center mt-6">
+<a class="inline-flex items-center gap-3 text-white/70 hover:text-green-400 transition-colors font-label-technical text-base" href="#">
+<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"></path></svg>
+                                تواصل مباشرة عبر واتساب
+                            </a>
+</div>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#050C17] full-width border-t border-white/10 text-white">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop py-20 text-right w-full mx-auto max-w-7xl">
+<div class="col-span-1 md:col-span-1 mb-8 md:mb-0">
+<img alt="Deepintaj Logo" class="h-12 object-contain w-auto mb-6 brightness-0 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO5x4j5O1yVvE5TLs-h06N-T9drdhWCqnhMU0_wiNNapXJLkCJjtt2Tca0A_i24wjmusYaAz1NFu0iHwm0FaaTAUWkMhIFIbRf4Vvf0y3lh3HU1bNLDjXNhijehwdoSZJvzfk1vc042cZH2AJzSSOyfNaz9axa-mVPS7rZ4HLalRor6mtPv1WvspEJrWzR7eeL4MbOvWgEdyo5VmHtskcCeA2uaWR49HqI58yZe4mQlhza3kkcrTyl-KhZdzMK9HfzIQ">
+<p class="font-label-technical text-white/60 text-sm mt-2">
+                    استشارات هندسية وتشغيلية مرخّصة
+                </p>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-white/80 hover:text-secondary transition-colors text-lg" href="#">الخدمات الهندسية</a>
+<a class="font-body-md text-white/80 hover:text-secondary transition-colors text-lg" href="#">إدارة المشاريع</a>
+<a class="font-body-md text-white/80 hover:text-secondary transition-colors text-lg" href="#">التصميم الإنشائي</a>
+<a class="font-body-md text-white/80 hover:text-secondary transition-colors text-lg" href="#">الاستشارات الفنية</a>
+</div>
+<div class="flex flex-col gap-4">
+<a class="font-body-md text-white/80 hover:text-secondary transition-colors text-lg" href="#">الرياض</a>
+<a class="font-body-md text-white/80 hover:text-secondary transition-colors text-lg" href="#">الخرج</a>
+</div></div></footer></body></html>

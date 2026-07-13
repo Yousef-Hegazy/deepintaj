@@ -1,0 +1,165 @@
+{
+  "metadata": {
+    "title": "Deepintaj | Licensed Engineering & Operational Consulting",
+    "description": "We help enterprises and project owners diagnose operational and engineering challenges, transforming them into clear, actionable steps."
+  },
+  "header": {
+    "home": "Home",
+    "services": "Services",
+    "methodology": "Methodology",
+    "why": "Why Deepintaj",
+    "contact": "Contact Us",
+    "languageSwitch": "العربية",
+    "cta": "Request Consultation"
+  },
+  "hero": {
+    "eyebrow": "Licensed Engineering & Operational Consulting",
+    "headlineLine1": "Clearer operations,",
+    "headlineLine2": "sharper execution,",
+    "headlineHighlight": "measurable results",
+    "subheadline": "We help enterprises and project owners diagnose operational and engineering challenges, transforming them into clear, actionable steps.",
+    "ctaPrimary": "Start Operational Assessment",
+    "ctaSecondary": "Explore Our Services"
+  },
+  "credentials": {
+    "experience": "Over 15 Years of Experience",
+    "certifiedEngineer": "Certified Engineering Expert",
+    "licensedConsultant": "Licensed Industrial Consultant",
+    "certifiedInspector": "Certified Building Inspector"
+  },
+  "audience": {
+    "label": "// Who We Serve",
+    "heading": "We deliver solutions across diverse sectors",
+    "pill1": "Factories & Industrial Facilities",
+    "pill2": "Workshops & Maintenance Centers",
+    "pill3": "Supply Chains & Operational Services",
+    "pill4": "Project Owners & Contractors",
+    "pill5": "Building Owners & Buyers",
+    "pill6": "Enterprises Facing Process Delays"
+  },
+  "servicesIntro": {
+    "label": "// Core Capabilities",
+    "heading": "Practical Services Grounded in Reality"
+  },
+  "bpr": {
+    "title": "Business Process Reengineering & Design",
+    "description": "We analyze your current workflow, identify waste and bottlenecks, and redesign your processes to increase efficiency and reduce operational costs.",
+    "item1": {
+      "title": "Current Process Analysis & Assessment",
+      "description": "Diagnose operational reality and identify gaps.",
+      "price": "500 SAR"
+    },
+    "item2": {
+      "title": "Organizational Structure Design for Processes",
+      "description": "Align the structure with optimal workflow.",
+      "price": "1500 SAR"
+    },
+    "item3": {
+      "title": "Comprehensive Business Process Reengineering (BPR)",
+      "description": "Radical process redesign for performance leaps.",
+      "price": "3000 SAR"
+    },
+    "imageAlt": "Deepintaj BPR workshop planning session"
+  },
+  "engineering": {
+    "title": "Specialized Engineering Consulting",
+    "description": "We bring cumulative engineering expertise to ensure execution quality, standards compliance, and the safety of industrial and commercial facilities.",
+    "item1": {
+      "title": "Engineering Drawing Review & Audit",
+      "description": "Ensure drawings are error-free before execution begins.",
+      "price": "500 SAR"
+    },
+    "item2": {
+      "title": "Building & Facility Inspection",
+      "description": "Precise technical reports on construction quality and safety.",
+      "price": "800 SAR"
+    },
+    "item3": {
+      "title": "Engineering Supervision of Execution",
+      "description": "On-site supervision to ensure compliance with specifications.",
+      "price": "1500 SAR"
+    },
+    "imageAlt": "Deepintaj specialized engineering consulting service"
+  },
+  "methodology": {
+    "label": "// Our Methodology",
+    "heading": "The Deepintaj Methodology: From Diagnosis to Impact",
+    "step1": {
+      "title": "We Understand the Reality",
+      "description": "Thorough analysis of data, drawings, and the actual work environment to form a comprehensive picture of the current state."
+    },
+    "step2": {
+      "title": "We Uncover the Gaps",
+      "description": "Identifying waste points, engineering challenges, and process bottlenecks using systematic analytical tools."
+    },
+    "step3": {
+      "title": "We Design the Solution",
+      "description": "Building customized engineering and operational models ready for direct implementation and aligned with the budget."
+    },
+    "step4": {
+      "title": "We Track the Impact",
+      "description": "Clear performance indicators and meticulous supervision to ensure desired results are achieved and sustained."
+    }
+  },
+  "whyDeepintaj": {
+    "label": "// Why Us",
+    "heading": "Why Deepintaj Is Your Trusted Partner?",
+    "item1": {
+      "title": "Over 15 Years of Expertise",
+      "description": "Deep cumulative knowledge in the Saudi industrial and engineering sector."
+    },
+    "item2": {
+      "title": "Strong Official Accreditations",
+      "description": "Certified engineering expert (SCE), licensed consultant from the Ministry of Industry, and certified inspector (Mostadam)."
+    },
+    "item3": {
+      "title": "Integrated Engineering-Operational Perspective",
+      "description": "We never separate the engineering drawing from operational reality; we design to build efficiently, and build to operate effectively."
+    },
+    "imageAlt": "Why Deepintaj is your trusted partner"
+  },
+  "assessment": {
+    "badge": "Recommended Starting Service",
+    "heading": "Initial Operational Assessment",
+    "description": "An intensive consultation session with our experts to quickly diagnose challenges, provide immediate recommendations, and define the path forward.",
+    "item1": "Quick review of drawings",
+    "item2": "Initial production line efficiency analysis",
+    "price": "500",
+    "currency": "SAR",
+    "priceLabel": "per consultation",
+    "cta": "Request Initial Assessment"
+  },
+  "contact": {
+    "heading": "Contact Our Experts",
+    "subheading": "Define your challenges so we can begin crafting the right engineering and operational solution for your enterprise.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your full name",
+    "phoneLabel": "Mobile Number",
+    "phonePlaceholder": "05x xxx xxxx",
+    "emailLabel": "Email",
+    "emailPlaceholder": "email@company.com",
+    "serviceLabel": "Service Required",
+    "serviceOption1": "Initial Operational Assessment",
+    "serviceOption2": "Business Process Reengineering (BPR)",
+    "serviceOption3": "Specialized Engineering Consulting",
+    "serviceOption4": "Other",
+    "descriptionLabel": "Brief About the Challenge or Project",
+    "descriptionPlaceholder": "Brief description...",
+    "submitButton": "Send Request",
+    "whatsappLink": "Contact Directly via WhatsApp",
+    "requiredIndicator": "*"
+  },
+  "footer": {
+    "tagline": "Licensed Engineering & Operational Consulting",
+    "servicesTitle": "Engineering Services",
+    "service1": "Project Management",
+    "service2": "Structural Design",
+    "service3": "Technical Consulting",
+    "location1": "Riyadh",
+    "location2": "Al-Kharj",
+    "whatsappQrTitle": "Contact Us on WhatsApp",
+    "whatsappQrCaption": "Scan the code to contact us directly",
+    "whatsappQrAlt": "QR code for contacting Deepintaj through WhatsApp"
+  },
+  "logoAlt": "Deepintaj Logo"
+}

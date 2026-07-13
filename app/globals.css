@@ -58,7 +58,7 @@
   --primary: #0A192F;
   --primary-foreground: #E6E2DE;
   --secondary: #E3A019;
-  --secondary-foreground: #FFFFFF;
+  --secondary-foreground: #0A192F;
   --muted: #F0ECEB;
   --muted-foreground: #707180;
   --accent: #0A192F;
@@ -126,6 +126,29 @@
     @apply bg-background text-foreground;
   }
   html {
-    @apply font-sans;
+    @apply font-sans scroll-smooth;
+    scroll-padding-top: 6rem;
   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Technical grid background pattern */
+.technical-grid {
+  background-image:
+    linear-gradient(rgba(156, 163, 175, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(156, 163, 175, 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Blueprint underlay pattern */
+.blueprint-underlay {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 16px 16px;
 }

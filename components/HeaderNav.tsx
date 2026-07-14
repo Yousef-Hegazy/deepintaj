@@ -43,7 +43,7 @@ export default function HeaderNav({ translations }: { translations: Record<strin
   const activeSection = useActiveSection(sectionIds);
 
   return (
-    <nav className="hidden md:flex items-center gap-12">
+    <nav className="hidden lg:flex items-center gap-12">
       {NAV_ITEMS.map((item) => {
         const isActive = activeSection === item.sectionId;
         return (

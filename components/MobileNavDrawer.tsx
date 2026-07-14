@@ -57,7 +57,7 @@ export default function MobileNavDrawer({
   return (
     <Drawer open={open} onOpenChange={setOpen}>
       <DrawerTrigger
-        className="md:hidden flex items-center justify-center size-10 text-primary-foreground/80 hover:text-secondary transition-colors cursor-pointer"
+        className="lg:hidden flex items-center justify-center size-10 text-primary-foreground/80 hover:text-secondary transition-colors cursor-pointer"
         aria-label="Open menu"
       >
         <Menu className="size-6" />

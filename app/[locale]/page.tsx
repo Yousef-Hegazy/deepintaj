@@ -1,4 +1,5 @@
 import HeaderNav from "@/components/HeaderNav";
+import MobileNavDrawer from "@/components/MobileNavDrawer";
 import { LocaleSwitch } from "@/components/LocaleSwitch";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -112,9 +113,21 @@ export default async function HomePage({ params }: Props) {
           />
 
           {/* Actions */}
-          <div className="flex items-center gap-4 md:gap-6 shrink-0">
+          <div className="flex items-center gap-2 md:gap-6 shrink-0">
             <span className="hidden md:inline-flex">
               <LocaleSwitch locale={locale} />
+            </span>
+            <span className="md:hidden">
+              <MobileNavDrawer
+                translations={{
+                  "header.home": t("header.home"),
+                  "header.services": t("header.services"),
+                  "header.methodology": t("header.methodology"),
+                  "header.why": t("header.why"),
+                  "header.contact": t("header.contact"),
+                }}
+                locale={locale}
+              />
             </span>
             <a
               href="#contact"
@@ -688,7 +701,8 @@ export default async function HomePage({ params }: Props) {
                   {/* WhatsApp Link */}
                   <div className="text-center mt-6">
                     <a
-                      href="#"
+                      href="https://wa.me/966590029324"
+                      target="__blank"
                       className="inline-flex items-center gap-3 text-primary-foreground/70 hover:text-green-400 transition-colors text-base font-heading"
                     >
                       <WhatsAppIcon className="size-6" />

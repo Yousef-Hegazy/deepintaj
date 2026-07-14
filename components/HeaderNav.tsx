@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 
-const NAV_ITEMS = [
+export const NAV_ITEMS = [
   { href: "#", labelKey: "header.home", sectionId: "hero" },
   { href: "#services", labelKey: "header.services", sectionId: "services" },
   { href: "#methodology", labelKey: "header.methodology", sectionId: "methodology" },

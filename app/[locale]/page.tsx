@@ -10,22 +10,12 @@ import { WhyDeepintajSection } from "@/components/WhyDeepintajSection";
 import { AssessmentCta } from "@/components/AssessmentCta";
 import { ContactSection } from "@/components/ContactSection";
 import { SiteFooter } from "@/components/SiteFooter";
-import type { Metadata } from "next";
+import { JsonLd } from "@/components/JsonLd";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 type Props = {
   params: Promise<{ locale: string }>;
 };
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "metadata" });
-
-  return {
-    title: t("title"),
-    description: t("description"),
-  };
-}
 
 export default async function HomePage({ params }: Props) {
   const { locale } = await params;
@@ -34,6 +24,7 @@ export default async function HomePage({ params }: Props) {
 
   return (
     <>
+      <JsonLd locale={locale} />
       <SiteHeader locale={locale} />
       <main>
         <HeroSection locale={locale} t={t} />

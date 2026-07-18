@@ -43,3 +43,5 @@ next-env.d.ts
 .trae/*
 .trae
 ./.trae
+.open-next/
+.wrangler/

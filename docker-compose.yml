@@ -1,15 +1,18 @@
 services:
-  mailpit:
-    image: axllent/mailpit
-    container_name: mailpit
-    restart: unless-stopped
-    volumes:
-      - ./data:/data
-    ports:
-      - 8025:8025
-      - 1025:1025
+  cf-build:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: pnpm run cf-build
     environment:
-      MP_MAX_MESSAGES: 5000
-      MP_DATABASE: /data/mailpit.db
-      MP_SMTP_AUTH_ACCEPT_ANY: 1
-      MP_SMTP_AUTH_ALLOW_INSECURE: 1
+      - NEXT_PUBLIC_SITE_URL=${NEXT_PUBLIC_SITE_URL:-https://deepintaj.com}
+      - CLOUDFLARE_API_TOKEN=${CLOUDFLARE_API_TOKEN:?CLOUDFLARE_API_TOKEN is required for wrangler commands}
+
+  cf-deploy:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: pnpm run deploy
+    environment:
+      - NEXT_PUBLIC_SITE_URL=${NEXT_PUBLIC_SITE_URL:-https://deepintaj.com}
+      - CLOUDFLARE_API_TOKEN=${CLOUDFLARE_API_TOKEN:?CLOUDFLARE_API_TOKEN is required for deployment}

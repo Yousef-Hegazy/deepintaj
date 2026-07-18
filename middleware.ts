@@ -8,4 +8,5 @@ export const config = {
     // Skip all internal Next.js paths
     "/((?!api|_next/static|_next/image|_vercel|favicon.ico|.*\\..*).*)",
   ],
+  runtime: "experimental-edge",
 };

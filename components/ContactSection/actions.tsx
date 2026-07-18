@@ -27,9 +27,9 @@ export async function sendServiceEmail(formData: FormData) {
     );
 
     await transporter.sendMail({
-      from: process.env.SMTP_USER || "deepintaj@gmail",
-      to: process.env.SMTP_USER || "deepintaj@example.com",
-      subject: "New Service Request",
+      from: process.env.SMTP_USER || "deepintaj@gmail.com",
+      to: process.env.SMTP_USER || "you@example.com",
+      subject: "طلب خدمة جديدة",
       html: renderedHTML,
     });
   }

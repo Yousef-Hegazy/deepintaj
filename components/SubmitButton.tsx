@@ -17,6 +17,7 @@ export default function SubmitButton({ children }: Props) {
       type="submit"
       variant="secondary"
       size="lg"
+      disabled={pending}
       className={cn("w-full py-5 text-lg font-bold hover:bg-white transition-colors rounded-[4px] mt-4 h-auto", {
         "cursor-not-allowed": pending,
       })}

@@ -1,8 +1,8 @@
-import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
+import SubmitButton from "../SubmitButton";
 import { sendServiceEmail } from "./actions";
 
 function WhatsAppIcon({ className }: { className?: string }) {
@@ -131,14 +131,7 @@ export function ContactSection({ locale, t }: ContactSectionProps) {
                 />
               </div>
 
-              <Button
-                type="submit"
-                variant="secondary"
-                size="lg"
-                className="w-full py-5 text-lg font-bold hover:bg-white transition-colors rounded-[4px] mt-4 h-auto"
-              >
-                {t("contact.submitButton")}
-              </Button>
+              <SubmitButton>{t("contact.submitButton")}</SubmitButton>
 
               <div className="text-center mt-6">
                 <a

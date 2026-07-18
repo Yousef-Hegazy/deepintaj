@@ -3,6 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
+import { sendServiceEmail } from "./actions";
 
 function WhatsAppIcon({ className }: { className?: string }) {
   return (
@@ -37,22 +38,23 @@ export function ContactSection({ locale, t }: ContactSectionProps) {
       <div className="container mx-auto px-4 md:px-16 relative z-10">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-semibold text-primary-foreground mb-4">
-              {t("contact.heading")}
-            </h2>
+            <h2 className="text-2xl md:text-3xl font-semibold text-primary-foreground mb-4">{t("contact.heading")}</h2>
             <p className="text-lg text-primary-foreground/70">{t("contact.subheading")}</p>
           </div>
 
-          <form className="bg-primary-foreground/5 p-10 border border-primary-foreground/10 shadow-2xl rounded-[16px] backdrop-blur-sm">
+          <form
+            action={sendServiceEmail}
+            className="bg-primary-foreground/5 p-10 border border-primary-foreground/10 shadow-2xl rounded-[16px] backdrop-blur-sm"
+          >
             <div className="space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
                   <Label className="block text-sm text-primary-foreground/80 mb-3 font-heading uppercase tracking-wider font-medium">
-                    {t("contact.nameLabel")}{" "}
-                    <span className="text-secondary">{t("contact.requiredIndicator")}</span>
+                    {t("contact.nameLabel")} <span className="text-secondary">{t("contact.requiredIndicator")}</span>
                   </Label>
                   <Input
                     required
+                    name="name"
                     placeholder={t("contact.namePlaceholder")}
                     className="w-full bg-primary border border-primary-foreground/20 px-5 py-4 text-base focus-visible:border-secondary focus-visible:ring-1 focus-visible:ring-secondary text-primary-foreground rounded-[4px] h-auto"
                   />
@@ -60,13 +62,13 @@ export function ContactSection({ locale, t }: ContactSectionProps) {
 
                 <div>
                   <Label className="block text-sm text-primary-foreground/80 mb-3 font-heading uppercase tracking-wider font-medium">
-                    {t("contact.phoneLabel")}{" "}
-                    <span className="text-secondary">{t("contact.requiredIndicator")}</span>
+                    {t("contact.phoneLabel")} <span className="text-secondary">{t("contact.requiredIndicator")}</span>
                   </Label>
                   <Input
                     required
                     type="tel"
                     dir="ltr"
+                    name="phone"
                     placeholder={t("contact.phonePlaceholder")}
                     className="w-full bg-primary border border-primary-foreground/20 px-5 py-4 text-base focus-visible:border-secondary focus-visible:ring-1 focus-visible:ring-secondary text-primary-foreground rounded-[4px] text-end h-auto"
                   />
@@ -78,8 +80,10 @@ export function ContactSection({ locale, t }: ContactSectionProps) {
                   {t("contact.emailLabel")}
                 </Label>
                 <Input
+                  required
                   type="email"
                   dir="ltr"
+                  name="email"
                   placeholder={t("contact.emailPlaceholder")}
                   className="w-full bg-primary border border-primary-foreground/20 px-5 py-4 text-base focus-visible:border-secondary focus-visible:ring-1 focus-visible:ring-secondary text-primary-foreground rounded-[4px] text-end h-auto"
                 />
@@ -89,7 +93,7 @@ export function ContactSection({ locale, t }: ContactSectionProps) {
                 <Label className="block text-sm text-primary-foreground/80 mb-3 font-heading uppercase tracking-wider font-medium">
                   {t("contact.serviceLabel")}
                 </Label>
-                <Select defaultValue={t("contact.serviceOption1")}>
+                <Select required name="serviceType" defaultValue={t("contact.serviceOption1")}>
                   <SelectTrigger
                     className={`w-full bg-primary border border-primary-foreground/20 px-5 py-4 text-base focus-visible:border-secondary focus-visible:ring-1 focus-visible:ring-secondary text-primary-foreground rounded-[4px] h-auto data-[size=default]:h-auto ${
                       isRtl ? "text-end" : "text-start"
@@ -119,14 +123,16 @@ export function ContactSection({ locale, t }: ContactSectionProps) {
                   {t("contact.descriptionLabel")}
                 </Label>
                 <Textarea
+                  required
                   placeholder={t("contact.descriptionPlaceholder")}
                   rows={4}
+                  name="description"
                   className="w-full bg-primary border border-primary-foreground/20 px-5 py-4 text-base focus-visible:border-secondary focus-visible:ring-1 focus-visible:ring-secondary text-primary-foreground rounded-[4px] resize-none"
                 />
               </div>
 
               <Button
-                type="button"
+                type="submit"
                 variant="secondary"
                 size="lg"
                 className="w-full py-5 text-lg font-bold hover:bg-white transition-colors rounded-[4px] mt-4 h-auto"

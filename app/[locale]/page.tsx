@@ -1,16 +1,16 @@
-import SiteHeader from "@/components/SiteHeader";
-import { HeroSection } from "@/components/HeroSection";
-import { CredentialsRibbon } from "@/components/CredentialsRibbon";
-import { AudienceSection } from "@/components/AudienceSection";
-import { ServicesIntro } from "@/components/ServicesIntro";
-import { BprSection } from "@/components/BprSection";
-import { EngineeringSection } from "@/components/EngineeringSection";
-import { MethodologySection } from "@/components/MethodologySection";
-import { WhyDeepintajSection } from "@/components/WhyDeepintajSection";
 import { AssessmentCta } from "@/components/AssessmentCta";
+import { AudienceSection } from "@/components/AudienceSection";
+import { BprSection } from "@/components/BprSection";
 import { ContactSection } from "@/components/ContactSection";
-import { SiteFooter } from "@/components/SiteFooter";
+import { CredentialsRibbon } from "@/components/CredentialsRibbon";
+import { EngineeringSection } from "@/components/EngineeringSection";
+import { HeroSection } from "@/components/HeroSection";
 import { JsonLd } from "@/components/JsonLd";
+import { MethodologySection } from "@/components/MethodologySection";
+import { ServicesIntro } from "@/components/ServicesIntro";
+import { SiteFooter } from "@/components/SiteFooter";
+import SiteHeader from "@/components/SiteHeader";
+import { WhyDeepintajSection } from "@/components/WhyDeepintajSection";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 type Props = {

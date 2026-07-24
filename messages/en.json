@@ -147,7 +147,10 @@
     "descriptionPlaceholder": "Brief description...",
     "submitButton": "Send Request",
     "whatsappLink": "Contact Directly via WhatsApp",
-    "requiredIndicator": "*"
+    "requiredIndicator": "*",
+    "toastSuccess": "Your request has been sent successfully! We'll get back to you soon.",
+    "toastError": "Failed to send your request. Please try again later.",
+    "toastWhatsAppSuggestion": "You can also contact us directly via WhatsApp"
   },
   "footer": {
     "tagline": "Licensed Engineering & Operational Consulting",

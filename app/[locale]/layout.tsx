@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import { HtmlAttributes } from "@/components/HtmlAttributes";
 import { siteConfig, getAlternates } from "@/lib/seo";
+import { Toaster } from "@/components/ui/sonner";
 import type { Metadata } from "next";
 
 type Props = {
@@ -128,6 +129,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       <DirectionProvider direction={dir}>
         <HtmlAttributes locale={locale} />
         {children}
+        <Toaster theme="dark" />
       </DirectionProvider>
     </NextIntlClientProvider>
   );

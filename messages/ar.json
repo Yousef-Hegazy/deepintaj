@@ -147,7 +147,10 @@
     "descriptionPlaceholder": "وصف موجز...",
     "submitButton": "إرسال الطلب",
     "whatsappLink": "تواصل مباشرة عبر واتساب",
-    "requiredIndicator": "*"
+    "requiredIndicator": "*",
+    "toastSuccess": "تم إرسال طلبك بنجاح! سنتواصل معك قريبًا.",
+    "toastError": "تعذر إرسال الطلب. يرجى المحاولة لاحقًا.",
+    "toastWhatsAppSuggestion": "يمكنك التواصل مباشرة عبر واتساب"
   },
   "footer": {
     "tagline": "استشارات هندسية وتشغيلية مرخّصة",

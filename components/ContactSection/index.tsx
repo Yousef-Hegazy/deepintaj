@@ -1,4 +1,5 @@
 import { ContactForm } from "./form";
+import { SectionHeading } from "@/components/SectionHeading";
 
 type TFunction = (key: string) => string;
 
@@ -13,13 +14,24 @@ export function ContactSection({ locale, t }: ContactSectionProps) {
   return (
     <section
       id="contact"
-      className="py-24 relative overflow-hidden bg-primary text-primary-foreground border-t border-primary-foreground/10"
+      className="py-32 relative overflow-hidden bg-primary text-primary-foreground border-t border-primary-foreground/10"
     >
+      {/* Subtle radial glow */}
+      <div className="absolute inset-0 radial-glow-secondary opacity-30" />
+
       <div className="container mx-auto px-4 md:px-16 relative z-10">
         <div className="max-w-3xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-2xl md:text-3xl font-semibold text-primary-foreground mb-4">{t("contact.heading")}</h2>
-            <p className="text-lg text-primary-foreground/70">{t("contact.subheading")}</p>
+          <div className="text-center mb-14 stagger-children">
+            <div className="animate-fade-up">
+              <SectionHeading
+                heading={t("contact.heading")}
+                variant="simple"
+                headingClassName="text-primary-foreground text-center"
+              />
+            </div>
+            <p className="text-lg text-primary-foreground/60 mt-4 animate-fade-up">
+              {t("contact.subheading")}
+            </p>
           </div>
 
           <ContactForm

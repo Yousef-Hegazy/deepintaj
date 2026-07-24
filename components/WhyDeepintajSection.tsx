@@ -29,11 +29,12 @@ export function WhyDeepintajSection({ locale, t }: WhyDeepintajSectionProps) {
             <SectionHeading
               label={t("whyDeepintaj.label")}
               heading={t("whyDeepintaj.heading")}
+              variant="left-accent"
               className="mb-10"
             />
 
             <div
-              className={`space-y-10 ${isRtl ? "border-e-4 border-border pe-8" : "border-s-4 border-border ps-8"}`}
+              className={`space-y-10 ${isRtl ? "border-e-2 border-secondary/30 pe-8" : "border-s-2 border-secondary/30 ps-8"}`}
             >
               {items.map(({ icon: Icon, key }) => (
                 <div key={key} className="flex gap-6">

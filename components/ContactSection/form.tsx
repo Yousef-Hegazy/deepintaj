@@ -81,23 +81,23 @@ export function ContactForm({
   }, [state, toastSuccess, toastError]);
 
   return (
-    <form action={formAction} className="bg-primary-foreground/5 p-10 border border-primary-foreground/10 shadow-2xl rounded-[16px] backdrop-blur-sm">
+    <form action={formAction} className="bg-primary-foreground/[0.06] p-10 border border-primary-foreground/10 shadow-2xl shadow-black/20 rounded-[16px] backdrop-blur-sm animate-scale-in">
       <div className="space-y-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <Label className="block text-sm text-primary-foreground/80 mb-3 font-heading uppercase tracking-wider font-medium">
+            <Label className="block text-sm text-primary-foreground/70 mb-3 font-heading uppercase tracking-wider font-medium">
               {nameLabel} <span className="text-secondary">{requiredIndicator}</span>
             </Label>
             <Input
               required
               name="name"
               placeholder={namePlaceholder}
-              className="w-full bg-primary border border-primary-foreground/20 px-5 py-4 text-base focus-visible:border-secondary focus-visible:ring-1 focus-visible:ring-secondary text-primary-foreground rounded-[4px] h-auto"
+              className="w-full bg-primary/60 border border-primary-foreground/15 px-5 py-4 text-base focus-visible:border-secondary focus-visible:ring-1 focus-visible:ring-secondary text-primary-foreground placeholder:text-primary-foreground/30 rounded-[4px] h-auto transition-colors duration-200"
             />
           </div>
 
           <div>
-            <Label className="block text-sm text-primary-foreground/80 mb-3 font-heading uppercase tracking-wider font-medium">
+            <Label className="block text-sm text-primary-foreground/70 mb-3 font-heading uppercase tracking-wider font-medium">
               {phoneLabel} <span className="text-secondary">{requiredIndicator}</span>
             </Label>
             <Input
@@ -106,13 +106,13 @@ export function ContactForm({
               dir="ltr"
               name="phone"
               placeholder={phonePlaceholder}
-              className="w-full bg-primary border border-primary-foreground/20 px-5 py-4 text-base focus-visible:border-secondary focus-visible:ring-1 focus-visible:ring-secondary text-primary-foreground rounded-[4px] text-end h-auto"
+              className="w-full bg-primary/60 border border-primary-foreground/15 px-5 py-4 text-base focus-visible:border-secondary focus-visible:ring-1 focus-visible:ring-secondary text-primary-foreground placeholder:text-primary-foreground/30 rounded-[4px] text-end h-auto transition-colors duration-200"
             />
           </div>
         </div>
 
         <div>
-          <Label className="block text-sm text-primary-foreground/80 mb-3 font-heading uppercase tracking-wider font-medium">
+          <Label className="block text-sm text-primary-foreground/70 mb-3 font-heading uppercase tracking-wider font-medium">
             {emailLabel}
           </Label>
           <Input
@@ -121,17 +121,17 @@ export function ContactForm({
             dir="ltr"
             name="email"
             placeholder={emailPlaceholder}
-            className="w-full bg-primary border border-primary-foreground/20 px-5 py-4 text-base focus-visible:border-secondary focus-visible:ring-1 focus-visible:ring-secondary text-primary-foreground rounded-[4px] text-end h-auto"
+            className="w-full bg-primary/60 border border-primary-foreground/15 px-5 py-4 text-base focus-visible:border-secondary focus-visible:ring-1 focus-visible:ring-secondary text-primary-foreground placeholder:text-primary-foreground/30 rounded-[4px] text-end h-auto transition-colors duration-200"
           />
         </div>
 
         <div>
-          <Label className="block text-sm text-primary-foreground/80 mb-3 font-heading uppercase tracking-wider font-medium">
+          <Label className="block text-sm text-primary-foreground/70 mb-3 font-heading uppercase tracking-wider font-medium">
             {serviceLabel}
           </Label>
           <Select required name="serviceType" defaultValue={serviceOptions[0]}>
             <SelectTrigger
-              className={`w-full bg-primary border border-primary-foreground/20 px-5 py-4 text-base focus-visible:border-secondary focus-visible:ring-1 focus-visible:ring-secondary text-primary-foreground rounded-[4px] h-auto data-[size=default]:h-auto ${
+              className={`w-full bg-primary/60 border border-primary-foreground/15 px-5 py-4 text-base focus-visible:border-secondary focus-visible:ring-1 focus-visible:ring-secondary text-primary-foreground rounded-[4px] h-auto data-[size=default]:h-auto transition-colors duration-200 ${
                 isRtl ? "text-end" : "text-start"
               }`}
             >
@@ -139,13 +139,13 @@ export function ContactForm({
             </SelectTrigger>
             <SelectContent
               align={isRtl ? "end" : "start"}
-              className="bg-primary border-primary-foreground/20 text-primary-foreground rounded-[4px]"
+              className="bg-primary border-primary-foreground/15 text-primary-foreground rounded-[4px]"
             >
               {serviceOptions.map((option, i) => (
                 <SelectItem
                   key={i}
                   value={option}
-                  className="text-primary-foreground focus:bg-secondary/10"
+                  className="text-primary-foreground focus:bg-secondary/10 cursor-pointer"
                 >
                   {option}
                 </SelectItem>
@@ -155,7 +155,7 @@ export function ContactForm({
         </div>
 
         <div>
-          <Label className="block text-sm text-primary-foreground/80 mb-3 font-heading uppercase tracking-wider font-medium">
+          <Label className="block text-sm text-primary-foreground/70 mb-3 font-heading uppercase tracking-wider font-medium">
             {descriptionLabel}
           </Label>
           <Textarea
@@ -163,17 +163,18 @@ export function ContactForm({
             placeholder={descriptionPlaceholder}
             rows={4}
             name="description"
-            className="w-full bg-primary border border-primary-foreground/20 px-5 py-4 text-base focus-visible:border-secondary focus-visible:ring-1 focus-visible:ring-secondary text-primary-foreground rounded-[4px] resize-none"
+            className="w-full bg-primary/60 border border-primary-foreground/15 px-5 py-4 text-base focus-visible:border-secondary focus-visible:ring-1 focus-visible:ring-secondary text-primary-foreground placeholder:text-primary-foreground/30 rounded-[4px] resize-none transition-colors duration-200"
           />
         </div>
 
         <SubmitButton>{submitButton}</SubmitButton>
 
-        <div className="text-center mt-6">
+        <div className="text-center mt-6 pt-6 border-t border-primary-foreground/10">
           <a
             href="https://wa.me/966590029324"
-            target="__blank"
-            className="inline-flex items-center gap-3 text-primary-foreground/70 hover:text-green-400 transition-colors text-base font-heading"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 text-primary-foreground/50 hover:text-green-400 transition-colors duration-200 text-base font-heading"
           >
             <WhatsAppIcon className="size-6" />
             {whatsappLink}

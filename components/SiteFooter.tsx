@@ -10,7 +10,7 @@ export function SiteFooter({ t }: SiteFooterProps) {
   return (
     <footer className="relative bg-[#060E1A] border-t border-primary-foreground/10 text-primary-foreground overflow-hidden">
       {/* Subtle top gradient */}
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-secondary/30 to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-linear-to-r from-transparent via-secondary/30 to-transparent" />
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-16 px-4 md:px-16 py-24 max-w-7xl mx-auto w-full">
         {/* Brand column */}
@@ -49,7 +49,7 @@ export function SiteFooter({ t }: SiteFooterProps) {
         {/* Locations */}
         <div className="flex flex-col gap-3">
           <h4 className="text-sm text-primary-foreground/40 font-heading uppercase tracking-widest mb-2">
-            {t("footer.location1")}
+            {t("footer.locations")}
           </h4>
           <span className="text-base text-primary-foreground/70">
             {t("footer.location1")}
